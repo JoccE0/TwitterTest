@@ -7,7 +7,6 @@ $api = new MulticraftAPI('http://example.com/api.php', 'USERNAME', 'API-CODE');
 $twtr = new Twitter;
 
 $serverid = 1;
-//$data = $api->getServerStatus($serverid, true);
 $data = $api->getServerStatus($serverid, true)['data']['status'];
 
 echo $data;
